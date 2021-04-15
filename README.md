@@ -1,2 +1,2 @@
 # telegraf-fail2ban
-Telegraf Docker conatienr with Fail2Ban adapter
+Telegraf Docker container with Fail2Ban adapter
