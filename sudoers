@@ -27,4 +27,4 @@ root	ALL=(ALL:ALL) ALL
 @includedir /etc/sudoers.d
 
 # Allow telegraf to query fail2ban socket
-telegraf ALL=(ALL) NOPASSWD: /usr/local/bin/fail2ban-client status
+telegraf ALL=(ALL) NOPASSWD: /usr/local/bin/fail2ban-client
