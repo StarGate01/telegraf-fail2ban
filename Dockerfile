@@ -16,3 +16,6 @@ RUN apt-get update && \
     git clone --single-branch --branch="${FAIL2BAN_VERSION}" --depth=1 https://github.com/fail2ban/fail2ban.git && \
     cd /app/fail2ban && python3 setup.py install && \
     rm -rf /app
+
+COPY sudoers /etc/sudoers
+RUN chmod 440 /etc/sudoers
