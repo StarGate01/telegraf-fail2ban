@@ -5,7 +5,7 @@ ARG FAIL2BAN_VERSION="0.11.2"
 
 RUN apt-get update && \
     apt-get -y install --no-install-recommends \
-    git build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev && \
+    sudo git build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libsqlite3-dev libreadline-dev libffi-dev curl libbz2-dev && \
     rm -rf /var/lib/apt/lists/* && \
     mkdir -p /app && cd /app && \
     curl -O https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tar.xz && \
