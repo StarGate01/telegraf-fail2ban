@@ -1,6 +1,6 @@
 FROM telegraf:latest
 
-ARG PYTHON_VERSION="3.8.5"
+ARG PYTHON_VERSION="3.9.7"
 ARG FAIL2BAN_VERSION="0.11.2"
 
 RUN apt-get update && \
