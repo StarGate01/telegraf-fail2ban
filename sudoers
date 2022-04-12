@@ -22,9 +22,9 @@ root	ALL=(ALL:ALL) ALL
 # Allow members of group sudo to execute any command
 %sudo	ALL=(ALL:ALL) ALL
 
-# Allow telegraf to query fail2ban socket
-user telegraf = (root) NOPASSWD: /usr/local/bin/fail2ban-client
-
 # See sudoers(5) for more information on "@include" directives:
 
 @includedir /etc/sudoers.d
+
+# Allow telegraf to query fail2ban socket
+telegraf ALL=(ALL) NOPASSWD: /usr/local/bin/fail2ban-client status
